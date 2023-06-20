@@ -10,12 +10,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,600;1,800&display=swap" rel="stylesheet">
+    
 
     <!-- Font Awoesome CDN -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- Bootstrap Done by me -->
+    
+    <!-- Custom Bootstrap -->
 
     <link rel="stylesheet" href="/vendor/css/custom_bootstrap.css">
 
@@ -68,8 +69,15 @@
                             <input class="w-100 shadow" type="search" id="searchInput" placeholder="Search for a country...">
                         </div>
 
-                        <div class="p-relative col-5 m-y-1">
-                            <label for=""></label>
+                        <div class="select-wrapper shadow p-relative col-5 m-y-1">
+                                <select class="w-100">
+                                  <option value="" selected disabled>Filter By Region</option>
+                                  <option value="Africa">Africa</option>
+                                  <option value="America">America</option>
+                                  <option value="Asia">Asia</option>
+                                  <option value="Europe">Europe</option>
+                                  <option value="Oceania">Oceania</option>
+                                </select>
                         </div>
                         
                     </div>
@@ -84,6 +92,7 @@
 
         <section class="cards-section">
             <div class="container">
+                
 
             </div>
         </section>

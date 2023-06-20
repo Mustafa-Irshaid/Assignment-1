@@ -90,6 +90,8 @@ input[type="checkbox"]:before {
 
 /* Main */
 
+/* search */
+
 [class*="col-"] {
     width: 100%;
 }
@@ -110,6 +112,52 @@ main .form-section i{
 button{
     background-color: white;
 }
+
+
+/* select : This is the hardest */
+
+.select-wrapper {
+    background-color: var(--White);
+    position: relative;
+    display: inline-block;
+    width: 60%;
+}
+  
+.select-wrapper::after {
+    content: '\f107';
+    font-family: "Font Awesome 5 Free";
+    width: 10px;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+  
+select{
+    appearance: none;
+    padding:1rem 30px 1rem 30px;
+    border: none;
+    background-color: var(--White);
+    font-size: 14px;
+    color: var(--DarkBlue);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+select option{
+    line-height: 20px;
+}
+
+select option:nth-child(1){
+    display: none;
+}
+
+  /* End of Select */
+
+  
+
 
 /* End Of Main */
 
