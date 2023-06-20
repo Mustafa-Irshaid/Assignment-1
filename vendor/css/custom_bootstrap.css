@@ -4,6 +4,10 @@
     width: 90% !important;    
 }
 
+.container-cards{
+    width: 80% !important;    
+}
+
 .m-auto{
     margin: auto;
 }
@@ -35,6 +39,14 @@
 
 .ai-center{
     align-items: center;
+}
+
+.d-block{
+    display: block;
+}
+
+.m-y-0{
+    margin:3.2rem 0;
 }
 
 .m-y-1{

@@ -4,9 +4,7 @@
 
 /* Public */
 
-html{
-    font-size: 16px;
-}
+
 
 body{
     margin: 0;
@@ -29,6 +27,12 @@ a{
     text-decoration: none;
     color: var(--DarkBlue)
 }
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
 
 i{
     color: var(--DarkGrey)
@@ -154,10 +158,20 @@ select option:nth-child(1){
     display: none;
 }
 
-  /* End of Select */
+/* End of Select */
 
-  
 
+/* Cards */
+
+.card-body{
+    padding:0 0 1.5rem 2rem;
+}
+
+.card-body li{
+    padding-bottom: 0.5rem;
+}
+
+/* End Of Card */
 
 /* End Of Main */
 
