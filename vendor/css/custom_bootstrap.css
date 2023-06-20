@@ -1,7 +1,7 @@
-/* This bootstrap is done by me */
+/* This is custom bootstrap */
 
 .container{
-    width: 90%;    
+    width: 90% !important;    
 }
 
 .m-auto{
@@ -12,28 +12,28 @@
     width:100%;
 }
 
-.d-flex{
+.flexbox{
     display: flex;
 }
 
 .shadow{
-    box-shadow: var(--Shadow) 0px 2px 3px;
+    box-shadow: var(--Shadow) 0px 2px 3px !important;
 }
 
-.row{
+.d-flexbox-row{
     display : flex;
     flex-wrap: wrap;
 }
 
-.position-relative{
+.p-relative{
     position: relative;
 }
 
-.justify-content-between{
+.jc-between{
     justify-content: space-between;
 }
 
-.align-items-center{
+.ai-center{
     align-items: center;
 }
 
