@@ -1,0 +1,30 @@
+@media only screen and (min-width:1440px) {
+    /* Main */
+
+    /* Form */
+
+    .d-flexbox-column{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .select-wrapper {
+        width: 13%;
+    }
+
+
+
+    /* Cards */
+
+    .container-cards{
+        width:90%;
+    }
+    .card{
+        width:22%;
+    }
+    
+
+
+    /* End Of Main */
+}

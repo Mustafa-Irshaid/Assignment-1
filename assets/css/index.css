@@ -96,10 +96,6 @@ input[type="checkbox"]:before {
 
 /* search */
 
-[class*="col-"] {
-    width: 100%;
-}
-
 input[type="search"]{
     min-height: 3rem;
     padding:1rem 30px 1rem 60px;
@@ -163,12 +159,35 @@ select option:nth-child(1){
 
 /* Cards */
 
+
+
 .card-body{
     padding:0 0 1.5rem 2rem;
+    background-color: var(--White);
+}
+
+.card-body h3{
+    padding-top:1.5rem;
+    margin:0;
 }
 
 .card-body li{
     padding-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.card-body li span{
+    font-weight: 300;
+}
+
+.card .card-image{
+    
+    width:100%;
+}
+.card img{
+    width:100%;
+    height: 256px;
+    object-fit:cover;
 }
 
 /* End Of Card */

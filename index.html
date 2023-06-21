@@ -23,6 +23,10 @@
 
     <link rel="stylesheet" href="/assets/css/index.css">
 
+    <!-- Media Query -->
+
+    <link rel="stylesheet" href="/assets/css/index-media_query.css">
+
 </head>
 <body>
     <!-- Header -->
@@ -41,7 +45,7 @@
 
                 <form>
                     <input type="checkbox" id="dark-mode-toggle">
-                    <label class="fw-3" for="dark-mode-toggle">Dark Mode</label>
+                    <label class="fw-2" for="dark-mode-toggle">Dark Mode</label>
                 </form>
 
             </div>
@@ -61,14 +65,14 @@
         <section class="form-section m-y-2">
             <div class="container m-auto">
                 <form>
-                    <div class="d-flexbox-row jc-between">
+                    <div class="form-wrapper d-flexbox-column jc-between">
 
-                        <div class="p-relative col-5 m-y-1">
+                        <div class="p-relative m-y-1">
                             <i class="fa-solid fa-magnifying-glass"></i>
                             <input class="w-100 shadow" type="search" id="searchInput" placeholder="Search for a country...">
                         </div>
 
-                        <div class="select-wrapper shadow p-relative col-5 m-y-1">
+                        <div class="select-wrapper shadow p-relative m-y-1">
                                 <select class="w-100">
                                   <option value="" selected disabled>Filter By Region</option>
                                   <option value="Africa">Africa</option>
@@ -90,7 +94,7 @@
         <!-- Cards Section -->
 
         <section class="cards-section">
-            <div class="container-cards m-auto">
+            <div class="container-cards m-auto d-flexbox-column jc-between">
 
                 <!-- Card 1 -->
 

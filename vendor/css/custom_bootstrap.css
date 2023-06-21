@@ -1,11 +1,11 @@
 /* This is custom bootstrap */
 
 .container{
-    width: 90% !important;    
+    width: 90%;    
 }
 
 .container-cards{
-    width: 80% !important;    
+    width: 80%;    
 }
 
 .m-auto{
@@ -21,11 +21,17 @@
 }
 
 .shadow{
-    box-shadow: var(--Shadow) 0px 2px 3px !important;
+    box-shadow: var(--Shadow) 3px 5px 25px !important;
 }
 
 .d-flexbox-row{
     display : flex;
+    flex-wrap: wrap;
+}
+
+.d-flexbox-column{
+    display : flex;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 
