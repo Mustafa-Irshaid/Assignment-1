@@ -1,7 +1,8 @@
-@media only screen and (min-width:1440px) {
-    /* Main */
 
-    /* Form */
+/* For Tablets 768px or bigger */
+
+@media only screen and (min-width: 768px) {
+    /* public */
 
     .d-flexbox-column{
         display: flex;
@@ -9,22 +10,52 @@
         flex-wrap: wrap;
     }
 
+    /* main */
+
+    /* form */
+
+    .select-wrapper {
+        width: 30%;
+    }
+    
+    .card{
+        width:45%;
+    }
+
+    /* End Of Main */
+    
+}
+
+
+/* For Desktops 1440px or bigger */
+
+@media only screen and (min-width:1440px) {
+    /* Main */
+
+    /* form */
+
     .select-wrapper {
         width: 13%;
     }
-
-
+    
 
     /* Cards */
 
     .container-cards{
         width:90%;
     }
+    
+    /* End Of Main */
+
+    /* Little Animation for Desktops */
+    
     .card{
         width:22%;
+        transition: all 0.5s;
     }
     
-
-
-    /* End Of Main */
+    .card:hover{
+        box-shadow:none!important;
+        transform: scale(0.95);
+    }
 }
