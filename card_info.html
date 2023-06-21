@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Information</title>
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,600;1,800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awoesome CDN -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Custom Bootstrap -->
+
+    <link rel="stylesheet" href="/vendor/css/custom_bootstrap.css">
+
+    <!-- Custom CSS -->
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/card-info.css">
+    
+</head>
+<body>
+
+    <!-- Header -->
+
+    <header class="shadow">
+        <div class="container m-auto">
+            <div class="flexbox ai-center jc-between h-8">
+
+                <!-- Header Title -->
+
+                <a href="home.html">
+                    <h1 class="fw-2">Where in the world?</h1>
+                </a>
+
+                <!-- Dark Mode Check Box -->
+
+                <form>
+                    <input type="checkbox" id="dark-mode-toggle">
+                    <label class="fw-2" for="dark-mode-toggle">Dark Mode</label>
+                </form>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- End Of Header -->
+
+    <!-- Main -->
+
+    <main>
+        <section class="container-85 m-auto">
+
+            <!-- Backward Anchor -->
+
+            <a class="d-inline-block m-y-0 shadow-1 txt-align-center" href="home.html">Back</a>
+
+            <!-- Card Information -->
+
+            <div class="card-info d-flexbox-column m-y-1">
+                <img class="w-100" src="/assets/images/flags/de.svg" alt="image not found">
+                <div class="card-body">
+                    <h3>Germany</h3>
+                    <ul class="d-flexbox-column">
+                        <div>
+                            <li>Native Name: <span>Deutschland</span></li>
+                            <li>Population: <span>83,166,711</span></li>
+                            <li>Region: <span>Europe</span></li>
+                            <li>Sub Region: <span>Western Europe</span></li>
+                            <li>Capital: <span>Berlin</span></li>
+                        </div>
+                        <div class="m-y-1">
+                            <li>Top Level Domain: <span>.de</span></li>
+                            <li>Currencies: <span>Euro (€)</span></li>
+                            <li>Languages: <span>German</span></li>
+                        </div>
+                    </ul>
+
+                    <aside class="d-flexbox-column jc-center">
+                        <h4>Border Countries:</h4>
+                        <ul class="d-flexbox-row jc-between txt-align-center">
+                            <li><a class="d-inline-block m-y-2 shadow-1 w-100" href="#">France</a></li>
+                            <li><a class="d-inline-block m-y-2 shadow-1 w-100" href="#">Germany</a></li>
+                            <li><a class="d-inline-block m-y-2 shadow-1 w-100" href="#">Netherlands</a></li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+
+            <!-- End Of Card Information -->
+        </section>
+    </main>
+
+
+    <!-- End Of Main -->
+
+    
+</body>
+</html>

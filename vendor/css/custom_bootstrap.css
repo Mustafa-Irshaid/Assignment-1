@@ -4,8 +4,12 @@
     width: 90%;    
 }
 
-.container-cards{
+.container-80{
     width: 80%;    
+}
+
+.container-85{
+    width: 85%;    
 }
 
 .m-auto{
@@ -22,6 +26,10 @@
 
 .shadow{
     box-shadow: var(--Shadow) 3px 5px 25px !important;
+}
+
+.shadow-1{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 8px !important;
 }
 
 .d-flexbox-row{
@@ -43,6 +51,10 @@
     justify-content: space-between;
 }
 
+.jc-center{
+    justify-content: center;
+}
+
 .ai-center{
     align-items: center;
 }
@@ -51,8 +63,17 @@
     display: block;
 }
 
+.d-inline-block{
+    display: inline-block;
+}
+
+.txt-align-center{
+    text-align:center;
+}
+
 .m-y-0{
-    margin:3.2rem 0;
+    margin-top:3.2rem;
+    margin-bottom:3.2rem;
 }
 
 .m-y-1{
@@ -61,6 +82,11 @@
 
 .m-y-2{
     margin:1rem 0;
+}
+
+.m-x-0{
+    margin-left:3.2rem;
+    margin-right:3.2rem;
 }
 
 .fw-3 {

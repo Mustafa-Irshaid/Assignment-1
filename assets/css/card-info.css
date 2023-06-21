@@ -1,0 +1,132 @@
+/* Back Anchor css and Country Border section*/
+h4{
+    margin:0;
+}
+
+main a{
+    font-size: 14px;
+}
+
+main aside ul li{
+    width:30%;
+}
+
+main .container-85 a{
+    background-color: var(--White);
+    position: relative;
+    padding:0.4rem 0rem;
+    color:var(--Darkblue);
+}
+
+main .container-85 > a::before{
+    content:'\f177';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    position: absolute;
+    left:30%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+main .container-85 > a{
+    padding:0.4rem 2rem 0.4rem 3rem;
+}
+
+/* Card Information */
+
+main .card-info h3{
+    margin-top:2.5rem;
+}
+
+main .card-info ul div>li{
+    padding: 0.5rem 0rem;
+    font-size: 14px;
+    
+}
+
+main .card-info ul div>li>span{
+    color:var(--DarkGrey);
+}
+
+/* End Of Card Information */
+
+
+/* Media Query for Card Information */
+
+/* For Tablets 768px or bigger */
+
+@media only screen and (min-width: 768px) {
+
+    .container-85{
+        width:90%;
+    }
+
+    .card-info{
+        justify-content: space-between;
+        gap:5%;
+    }
+
+    img{
+        width:45% !important;
+        object-fit: cover;
+    }
+
+    .card-body{
+        flex-grow: 1;
+        min-width:49%;
+    }
+
+    main .card-info ul div:nth-child(2){
+        margin: 0;
+    }
+
+    main .card-info .card-body>ul{
+        justify-content: start;
+        gap:10%;
+    }
+
+    main .card-info aside{
+        justify-content:left;
+        align-items: center;
+    }
+
+    main .card-info aside ul{
+        flex-grow: 1;
+        justify-content: space-around;
+    }
+
+    main .card-info aside ul li{
+        width:30%;
+    }
+    
+}
+
+
+/* For Desktops 1440px or bigger */
+
+@media only screen and (min-width:1440px) {
+
+    /* little animation */
+
+    main .container-85 > a::before{
+        transition: all 0.5s;
+    }
+
+    main .container-85 > a:hover::before{
+        left:20%;
+    }
+
+    main a{
+        transition: all 0.5s !important;
+    }
+
+    main a:hover{
+        box-shadow: var(--Shadow) 3px 5px 25px !important;
+        transform: scale(0.95) !important;
+    }
+
+
+
+}
+
