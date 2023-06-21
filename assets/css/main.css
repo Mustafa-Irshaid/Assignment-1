@@ -1,0 +1,59 @@
+/* Importing Sans-Serif Font from google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,600;1,800&display=swap');
+
+/* Public */
+
+body{
+    margin: 0;
+    padding: 0;
+    color: var(--DarkBlue);
+    background-color: var(--LightGrey);
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+:root{
+    --DarkBlue:#111517;
+    --DarkGrey:#858585;
+    --LightGrey:#fafafa;
+    --White:#ffffff;
+    --Shadow:#00000010;
+}
+
+a{
+    text-decoration: none;
+    color: var(--DarkBlue)
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+i{
+    color: var(--DarkGrey)
+}
+
+/* End Of Public */
+
+
+
+/* Media Query For main */
+
+/* For Tablets 768px or bigger */
+
+@media only screen and (min-width: 768px) {
+    /* public */
+
+    .d-flexbox-column{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+}
+
+
+
+
