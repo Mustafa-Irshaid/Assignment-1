@@ -42,7 +42,7 @@
                 <!-- Dark Mode Check Box -->
 
                 <form>
-                    <input type="checkbox" id="dark-mode-toggle">
+                    <input type="checkbox" name="dark-mode-toggle" id="dark-mode-toggle">
                     <label for="dark-mode-toggle">Dark Mode</label>
                 </form>
 
@@ -62,21 +62,25 @@
         <section class="form-section">
             <div class="centralized-container">
                 <form>
-                 
+                        <!-- Search Input -->
+
                         <div class="search-input">
                             <i class="fa-solid fa-magnifying-glass"></i>
                             <input class="shadow" type="search" id="searchInput" placeholder="Search for a country...">
                         </div>
 
+                        <!-- Select Input -->
+
                         <div class="select-input shadow">
-                                <select>
-                                  <option value="" selected disabled>Filter By Region</option>
-                                  <option value="Africa">Africa</option>
-                                  <option value="America">America</option>
-                                  <option value="Asia">Asia</option>
-                                  <option value="Europe">Europe</option>
-                                  <option value="Oceania">Oceania</option>
-                                </select>
+                            <input type="checkbox" name="country-select" id="country-select" placeholder="Filter By Region" checked>
+                            <ul class="shadow">
+                                <li>Africa</li>
+                                <li>America</li>
+                                <li>Asia</li>
+                                <li>Europe</li>
+                                <li>Oceania</li>
+                            </ul> 
+                            <label for="country-select">Filter By Region</label>
                         </div>
 
                 </form>

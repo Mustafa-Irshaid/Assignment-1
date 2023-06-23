@@ -31,28 +31,35 @@ main .form-section .search-input button{
 main .form-section .search-input{
     position: relative;
     margin : 1.5rem 0rem;
+    min-width:37%;
 }
 
 
-input[type="search"]{
+main .form-section .search-input input[type="search"]{
     min-height: 3rem;
     padding:1rem 30px 1rem 60px;
     border-color: transparent;
     border-radius: 5px;
-    width:100%
+    width:100%;
 }
 
 
-/* Select input */
+/* Select input  */
 
 main .form-section .select-input {
     background-color: var(--White);
     position: relative;
-    display: inline-block;
+    display: flex;
+    align-items: center;
     margin : 1.5rem 0;
-    width: 60%;
+    width:60%;
+    border-radius: 5px;
 }
-  
+
+main .form-section .select-input input{
+    appearance: none;
+}
+
 main .form-section .select-input::after {
     content: '\f107';
     font-family: "Font Awesome 5 Free";
@@ -64,22 +71,52 @@ main .form-section .select-input::after {
     transform: translateY(-50%);
     pointer-events: none;
 }
-  
-main .form-section .select-input select{
-    appearance: none;
-    padding:1rem 30px 1rem 30px;
-    border: none;
-    background-color: var(--White);
+
+main .form-section .select-input label{
+    padding:1rem 1rem;
+    width:100%;
     font-size: 14px;
     color: var(--DarkBlue);
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    line-height: 20px;
-    width:100%;
 }
 
-main .form-section .select-input select option:nth-child(1){
-    display: none;
+main .form-section .select-input input[type="checkbox"]:checked ~ ul{
+    visibility: hidden;
+    bottom:-112px;
+    left:0px;
+    background-color: transparent;
+    color:transparent;
+    transform: translate(-50%,-50%);
+    transform: scaleY(0.1);
+    transition: all 0.3s; 
+}
+
+main .form-section .select-input ul{
+    visibility: visible;
+    position: absolute;
+    z-index: 1;
+    bottom:-261px;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:100%;
+    border-radius: 5px;
+    background-color: White;
+    padding: 0.5rem 0rem;
+    
+}
+
+main .form-section .select-input ul li{
+    padding:0.4rem 1.4rem;
+    font-size: 14px;
+    transition: color background-color 0.2s;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+main .form-section .select-input ul li:hover{
+    background-color: var(--DarkGrey) !important;
+    color:var(--White)
+    
 }
 
 /* End of Select */
@@ -96,7 +133,7 @@ main .form-section .select-input select option:nth-child(1){
     }
 
     main .form-section .select-input {
-        width: 30%;
+        width:21%;
     }
     
 }
@@ -107,7 +144,7 @@ main .form-section .select-input select option:nth-child(1){
 @media only screen and (min-width:1440px) {
 
     main .form-section .select-input {
-        width: 13%;
+        width:14%;
     }
 
 }

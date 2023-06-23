@@ -25,14 +25,14 @@ header .header-content label{
 
 /* Check box icon appearance none */
 
-input[type="checkbox"] {
+header input[type="checkbox"] {
     appearance: none;
     cursor: pointer;
 }
 
 /* Replacing it with the moon icon */
 
-input[type="checkbox"]:before {
+header input[type="checkbox"]:before {
     content: '\f186';
     font-family: "Font Awesome 5 Free";
     font-size: 16px;
