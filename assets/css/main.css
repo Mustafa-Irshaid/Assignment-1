@@ -21,6 +21,11 @@ body{
     --Shadow:#00000010;
 }
 
+.centralized-container{
+    width:90%;
+    margin: auto;
+}
+
 a{
     text-decoration: none;
     color: var(--DarkBlue)
@@ -34,6 +39,8 @@ ul{
 i{
     color: var(--DarkGrey)
 }
+
+
 
 /* End Of Public */
 

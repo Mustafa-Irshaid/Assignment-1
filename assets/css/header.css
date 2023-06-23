@@ -1,21 +1,26 @@
 /* Header */
 
-h1{
-    font-size: 1rem;
-}
-
 header{
     background-color: var(--White);
 }
 
-.h-8{
-    min-height: 8vh;
+header .header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0rem;
+}
+
+header .header-content h1{
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 /* Dark Mode */
 
-label{
+header .header-content label{
     font-size: 0.9rem;
+    font-weight: 600;
 }
 
 /* Check box icon appearance none */
