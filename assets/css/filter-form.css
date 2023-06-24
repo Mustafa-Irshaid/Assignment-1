@@ -3,64 +3,62 @@
 
 /* In general */
 
-main .form-section form{
+.form-section form{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-main .form-section{
+.form-section{
     margin:1rem 0;
 }
 
-main .form-section i{
+.form-section i{
     position: absolute;
     top:50%;
     left:30px;
     transform: translate(-50%,-50%);
 }
 
-
-
 /* Search input */
 
-main .form-section .search-input button{
+.form-section .search-input button{
     background-color: var(--White);
 }
 
-main .form-section .search-input{
+.form-section .search-input{
     position: relative;
     margin : 1.5rem 0rem;
     min-width:37%;
 }
 
 
-main .form-section .search-input input[type="search"]{
+.form-section .search-input input[type="search"]{
     min-height: 3rem;
     padding:1rem 30px 1rem 60px;
     border-color: transparent;
-    border-radius: 5px;
+    border-radius: 7px;
     width:100%;
 }
 
 
 /* Select input  */
 
-main .form-section .select-input {
+.form-section .select-input {
     background-color: var(--White);
     position: relative;
     display: flex;
     align-items: center;
     margin : 1.5rem 0;
     width:60%;
-    border-radius: 5px;
+    border-radius: 7px;
 }
 
-main .form-section .select-input input{
+.form-section .select-input input{
     appearance: none;
 }
 
-main .form-section .select-input::after {
+.form-section .select-input::after {
     content: '\f107';
     font-family: "Font Awesome 5 Free";
     width: 10px;
@@ -72,14 +70,14 @@ main .form-section .select-input::after {
     pointer-events: none;
 }
 
-main .form-section .select-input label{
+.form-section .select-input label{
     padding:1rem 1rem;
     width:100%;
     font-size: 14px;
     color: var(--DarkBlue);
 }
 
-main .form-section .select-input input[type="checkbox"]:checked ~ ul{
+.form-section .select-input input[type="checkbox"]:checked ~ ul{
     visibility: hidden;
     bottom:-112px;
     left:0px;
@@ -90,7 +88,7 @@ main .form-section .select-input input[type="checkbox"]:checked ~ ul{
     transition: all 0.3s; 
 }
 
-main .form-section .select-input ul{
+.form-section .select-input ul{
     visibility: visible;
     position: absolute;
     z-index: 1;
@@ -104,7 +102,7 @@ main .form-section .select-input ul{
     
 }
 
-main .form-section .select-input ul li{
+.form-section .select-input ul li{
     padding:0.4rem 1.4rem;
     font-size: 14px;
     transition: color background-color 0.2s;
@@ -113,9 +111,9 @@ main .form-section .select-input ul li{
     z-index: 2;
 }
 
-main .form-section .select-input ul li:hover{
-    background-color: var(--DarkGrey) !important;
-    color:var(--White)
+.form-section .select-input ul li:hover{
+    background-color: var(--DarkGrey);
+    color:var(--White);
     
 }
 
@@ -128,11 +126,11 @@ main .form-section .select-input ul li:hover{
 
 @media only screen and (min-width: 768px) {
 
-    main .form-section form{
+    .form-section form{
         flex-direction: row;
     }
 
-    main .form-section .select-input {
+    .form-section .select-input {
         width:21%;
     }
     
@@ -143,7 +141,7 @@ main .form-section .select-input ul li:hover{
 
 @media only screen and (min-width:1440px) {
 
-    main .form-section .select-input {
+    .form-section .select-input {
         width:14%;
     }
 
