@@ -14,10 +14,6 @@
     <!-- Font Awoesome CDN -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <!-- Custom Bootstrap -->
-
-    <link rel="stylesheet" href="/vendor/css/custom_bootstrap.css">
 
     <!-- Custom CSS -->
 
@@ -30,7 +26,7 @@
 <body>
     <!-- Header -->
 
-    <header class="shadow">
+    <header class="header-shadow">
         <div class="header-content centralized-container">
 
                 <!-- Header Title -->
@@ -64,23 +60,23 @@
                 <form>
                         <!-- Search Input -->
 
-                        <div class="search-input shadow">
+                        <div class="search-input form-shadow">
                             <i class="fa-solid fa-magnifying-glass"></i>
                             <input type="search" id="searchInput" placeholder="Search for a country...">
                         </div>
 
                         <!-- Select Input -->
 
-                        <div class="select-input shadow">
+                        <div class="select-input form-shadow">
                             <input type="checkbox" name="country-select" id="country-select" placeholder="Filter By Region" checked>
-                            <ul class="shadow">
+                            <label for="country-select">Filter By Region</label>
+                            <ul class="form-shadow">
                                 <li>Africa</li>
                                 <li>America</li>
                                 <li>Asia</li>
                                 <li>Europe</li>
                                 <li>Oceania</li>
                             </ul> 
-                            <label for="country-select">Filter By Region</label>
                         </div>
 
                 </form>
