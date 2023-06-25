@@ -4,6 +4,12 @@
 
 /* Public */
 
+*{
+    color: var(--DarkBlue);
+    background-color: var(transparent);
+
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -17,6 +23,7 @@ body{
     --LightGrey:#fafafa;
     --White:#ffffff;
     --Shadow:#00000010;
+    --routingShadow:#0000003d;
 }
 
 .centralized-container{
@@ -37,7 +44,7 @@ body{
 }
 
 .routing-anchor-shadow{
-    box-shadow: #0000003d 0px 0px 8px;
+    box-shadow: var(--routingShadow) 0px 0px 8px;
 }
 
 a{

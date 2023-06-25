@@ -3,6 +3,10 @@
 
 /* public */
 
+main{
+    background-color: var(--LightGrey);
+}
+
 .card-body-details li , 
 .card-body-details li span ,
 .border-countries-routers li a{
@@ -27,12 +31,14 @@ main a{
     display: flex;
     flex-direction: column;
     
+    
 }
 
 .card-info-container{
     width:95%;
     margin: auto;
     min-height: 100vh;
+    
 }
 
 .card-info .card-body .card-body-details{
@@ -69,7 +75,7 @@ main .border-countries-routers li{
 main .backward-router{
     background-color: var(--White);
     position: relative;
-    padding:0.4rem 0rem;
+    padding:1rem 0rem;
     color:var(--Darkblue);
 }
 
@@ -113,7 +119,7 @@ main .card-info .card-body-details div>li>span{
 .border-countries-routers li a{
     display: inline-block;
     text-align: center;
-    padding:0.2rem 0rem;
+    padding:0.3rem 0rem;
     margin:1rem 0;
     min-width:100%;
 }
@@ -135,13 +141,17 @@ main .card-info .card-body-details div>li>span{
     }
     
     img{
+        flex-grow: 1;
         width:45% !important;
         object-fit: cover;
+      
+
     }
 
     .card-body{
         flex-grow: 1;
         min-width:49%;
+        height: auto;
     }
 
     .card-info .card-body .card-body-details{
@@ -165,10 +175,16 @@ main .card-info .card-body-details div>li>span{
     main .card-info .border-countries-routers{
         flex-grow: 1;
         justify-content: space-around;
+        
     }
 
     main .card-info .border-countries-routers li{
         width:30%;
+        
+    }
+    main .card-info .border-countries-routers li a{
+        background-color: var(--White);
+        
     }
 
     .border-countries{
