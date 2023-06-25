@@ -1,0 +1,204 @@
+/* Back Anchor css and Country Border section*/
+
+
+/* public */
+
+.card-body-details li , 
+.card-body-details li span ,
+.border-countries-routers li a{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+h4{
+    margin:0;
+}
+
+main a{
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+
+/* layouts */
+
+.card-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-info-container{
+    width:95%;
+    margin: auto;
+}
+
+.card-info .card-body .card-body-details{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+
+.card-info img{
+    width:100%;
+}
+
+main .border-countries-routers li{
+    width:30%;
+}
+
+.border-countries{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.border-countries-routers{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+/* Backward Router */
+
+main .backward-router{
+    background-color: var(--White);
+    position: relative;
+    padding:0.4rem 0rem;
+    color:var(--Darkblue);
+}
+
+main .backward-router{
+    display: inline-block;
+    margin:3rem 0;
+}
+
+main .backward-router::before{
+    content:'\f177';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    position: absolute;
+    left:30%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+main .backward-router{
+    padding:0.4rem 2rem 0.4rem 3rem;
+}
+
+/* Card Information */
+
+main .card-info h3{
+    margin-top:2.5rem;
+}
+
+main .card-info .card-body-details div>li{
+    padding: 0.5rem 0rem;
+    font-size: 14px;
+}
+
+main .card-info .card-body-details div>li>span{
+    color:var(--DarkGrey);
+}
+
+/* border countries suggesstions */
+
+.border-countries-routers li a{
+    display: inline-block;
+    text-align: center;
+    padding:0.2rem 0rem;
+    margin:1rem 0;
+    min-width:100%;
+}
+
+/* Media Query for Card Information */
+
+/* For Tablets 768px or bigger */
+
+@media only screen and (min-width: 768px) {
+
+    .card-info-container{
+        width:100%;
+    }
+
+    .card-info{
+        flex-direction: row;
+        justify-content: space-between;
+        gap:5%;
+    }
+    
+    img{
+        width:45% !important;
+        object-fit: cover;
+    }
+
+    .card-body{
+        flex-grow: 1;
+        min-width:49%;
+    }
+
+    .card-info .card-body .card-body-details{
+        flex-direction: row;
+    }
+
+    main .card-body-details div:nth-child(2){
+        margin: 0;
+    }
+
+    main .card-body-details{
+        justify-content: start;
+        gap:10%;
+    }
+
+    main .card-info aside{
+        justify-content:left;
+        align-items: center;
+    }
+
+    main .card-info .border-countries-routers{
+        flex-grow: 1;
+        justify-content: space-around;
+    }
+
+    main .card-info .border-countries-routers li{
+        width:30%;
+    }
+
+    .border-countries{
+        flex-direction: row;
+    }
+    
+
+}
+
+
+/* For Desktops 1440px or bigger */
+
+@media only screen and (min-width:1440px) {
+
+    /* little animation */
+
+    main .backward-router::before{
+        transition: all 0.5s;
+    }
+
+    main .backward-router:hover::before{
+        left:20%;
+    }
+
+    main a{
+        transition: all 0.5s !important;
+    }
+
+    main a:hover{
+        box-shadow: var(--Shadow) 3px 5px 25px !important;
+        transform: scale(0.95) !important;
+    }
+
+}
+

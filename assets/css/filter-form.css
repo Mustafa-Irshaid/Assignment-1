@@ -1,0 +1,148 @@
+/* Filter Component */
+
+
+/* In general */
+
+.form-section form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-section{
+    margin:1rem 0;
+}
+
+.form-section i{
+    position: absolute;
+    top:50%;
+    left:30px;
+    transform: translate(-50%,-50%);
+}
+
+/* Search input */
+
+.form-section .search-input button{
+    background-color: var(--White);
+}
+
+.form-section .search-input{
+    position: relative;
+    margin : 1.5rem 0rem;
+    min-width:37%;
+}
+
+
+.form-section .search-input input[type="search"]{
+    min-height: 3rem;
+    padding:1rem 30px 1rem 60px;
+    border-color: transparent;
+    border-radius: 7px;
+    width:100%;
+}
+
+
+/* Select input  */
+
+.form-section .select-input {
+    background-color: var(--White);
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin : 1.5rem 0;
+    width:60%;
+    border-radius: 7px;
+}
+
+.form-section .select-input input{
+    appearance: none;
+}
+
+.form-section .select-input::after {
+    content: '\f107';
+    font-family: "Font Awesome 5 Free";
+    width: 10px;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.form-section .select-input label{
+    padding:1rem 1rem;
+    width:100%;
+    font-size: 14px;
+    color: var(--DarkBlue);
+}
+
+.form-section .select-input input[type="checkbox"]:checked ~ ul{
+    visibility: hidden;
+    bottom:-112px;
+    left:0px;
+    background-color: transparent;
+    color:transparent;
+    transform: translate(-50%,-50%);
+    transform: scaleY(0.1);
+    transition: all 0.3s; 
+}
+
+.form-section .select-input ul{
+    visibility: visible;
+    position: absolute;
+    z-index: 1;
+    bottom:-261px;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:100%;
+    border-radius: 5px;
+    background-color: White;
+    padding: 0.5rem 0rem;
+    
+}
+
+.form-section .select-input ul li{
+    padding:0.4rem 1.4rem;
+    font-size: 14px;
+    transition: color background-color 0.2s;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+.form-section .select-input ul li:hover{
+    background-color: var(--DarkGrey);
+    color:var(--White);
+    
+}
+
+/* End of Select */
+
+
+/* Media Query for filter-form */
+
+/* For Tablets 768px or bigger */
+
+@media only screen and (min-width: 768px) {
+
+    .form-section form{
+        flex-direction: row;
+    }
+
+    .form-section .select-input {
+        width:21%;
+    }
+    
+}
+
+
+/* For Desktops 1440px or bigger */
+
+@media only screen and (min-width:1440px) {
+
+    .form-section .select-input {
+        width:14%;
+    }
+
+}

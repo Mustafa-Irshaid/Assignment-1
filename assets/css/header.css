@@ -1,0 +1,50 @@
+/* Header */
+
+header{
+    background-color: var(--White);
+}
+
+header .header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0rem;
+}
+
+header .header-content h1{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* Dark Mode */
+
+header .header-content label{
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Check box icon appearance none */
+
+header input[type="checkbox"] {
+    appearance: none;
+    cursor: pointer;
+}
+
+/* Replacing it with the moon icon */
+
+header input[type="checkbox"]:before {
+    content: '\f186';
+    font-family: "Font Awesome 5 Free";
+    font-size: 16px;
+}
+
+/* if darkmode is checked */
+
+/* input[type="checkbox"]:checked ~ body {
+    --Darkblue:red;
+} */
+
+/* End Of Dark Mode */
+
+
+/* End Of Header */
