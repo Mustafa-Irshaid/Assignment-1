@@ -10,7 +10,7 @@
 }
 
 .form-section{
-    margin:1rem 0;
+    padding:1rem 0;
 }
 
 .form-section i{
@@ -24,6 +24,10 @@
 
 .form-section .search-input button{
     background-color: var(--White);
+}
+
+.form-section .search-input button::placeholder{
+    color: var(--White) !important;
 }
 
 .form-section .search-input{

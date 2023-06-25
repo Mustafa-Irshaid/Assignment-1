@@ -26,11 +26,13 @@ main a{
 .card-info{
     display: flex;
     flex-direction: column;
+    
 }
 
 .card-info-container{
     width:95%;
     margin: auto;
+    min-height: 100vh;
 }
 
 .card-info .card-body .card-body-details{

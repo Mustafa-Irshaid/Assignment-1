@@ -7,8 +7,6 @@
 body{
     margin: 0;
     padding: 0;
-    color: var(--DarkBlue);
-    background-color: var(--LightGrey);
     font-size: 1rem;
     font-family: sans-serif;
 }
@@ -39,7 +37,7 @@ body{
 }
 
 .routing-anchor-shadow{
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 8px;
+    box-shadow: #0000003d 0px 0px 8px;
 }
 
 a{
@@ -63,19 +61,6 @@ i{
 
 
 /* Media Query For main */
-
-/* For Tablets 768px or bigger */
-
-@media only screen and (min-width: 768px) {
-    /* public */
-
-    .d-flexbox-column{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-}
 
 
 
