@@ -2,6 +2,7 @@
 
 header{
     background-color: var(--White);
+    height: 70px;
 }
 
 header .header-content{
@@ -14,35 +15,54 @@ header .header-content{
 header .header-content h1{
     font-size: 1rem;
     font-weight: 600;
+    background-color: var(--White);
 }
 
 /* Dark Mode */
 
-header .header-content label{
-    font-size: 0.9rem;
-    font-weight: 600;
-}
-
 /* Check box icon appearance none */
 
-header input[type="checkbox"] {
+body > input[type="checkbox"] {
+    position:absolute;
+    right: 5%;
+    top: 25px;
+    z-index: 3;
     appearance: none;
     cursor: pointer;
+    color:var(--DarkBlue);
 }
 
 /* Replacing it with the moon icon */
 
-header input[type="checkbox"]:before {
+.dark-mode-btn:before {
     content: '\f186';
     font-family: "Font Awesome 5 Free";
+    font-weight: 300;
+    font-size: 16px;
+    
+}
+
+.dark-mode-btn:after {
+    content: 'Dark Mode';
+    font-family: sans-serif;
+    font-weight: 300;
+    padding-left:5px;
     font-size: 16px;
 }
 
 /* if darkmode is checked */
+.dark-mode-btn:checked ,
+.dark-mode-btn:checked ~ *
+{
+    --DarkBlue: #eaeaec !important;
+    --DarkGrey: #797979 !important;
+    --LightGrey: #1c1e21 !important;
+    --White: #000000 !important;
+    --Shadow: #ffffff10 !important;
+    --Shadow-1: #ffffff3d !important;
+    --routingShadow:#ffffff3d;
+}
 
-/* input[type="checkbox"]:checked ~ body {
-    --Darkblue:red;
-} */
 
 /* End Of Dark Mode */
 
